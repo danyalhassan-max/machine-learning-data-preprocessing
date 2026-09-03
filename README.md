@@ -1,98 +1,91 @@
-# Machine Learning Data Preprocessing
+# Machine Learning Preprocessing
 
-Practical implementation of essential data preprocessing techniques for Machine Learning using Python and scikit-learn.
+A practical implementation of essential data preprocessing techniques used in Machine Learning with Python, Pandas, NumPy, and Scikit-learn.
 
-This repository focuses on learning preprocessing through hands-on coding, official scikit-learn examples, experimentation, and real datasets.
+This repository documents hands-on practice with data cleaning, categorical encoding, feature scaling, outlier detection, feature creation, and feature transformation.
 
-## Purpose
+---
 
-Data preprocessing is an important step in a Machine Learning workflow.
+## About
 
-Raw datasets commonly contain:
+Data preprocessing is a critical stage of the Machine Learning workflow.
+
+Real-world datasets commonly contain:
 
 - Missing values
-- Numerical features with different scales
-- Categorical features
+- Duplicate records
 - Outliers
+- Categorical variables
+- Different numerical scales
 - Features that require transformation
-- Unnecessary or less useful features
+- Features that can be derived from existing data
 
-This repository documents my practical learning of how to prepare data before training Machine Learning models.
+This repository contains practical implementations of these preprocessing techniques using Python and Scikit-learn.
+
+The goal is not to memorize preprocessing APIs, but to understand how and when each technique is applied in a Machine Learning workflow.
+
+---
 
 ## Technologies
 
 - Python
 - Pandas
 - NumPy
-- scikit-learn
+- Scikit-learn
+- Matplotlib
+- Seaborn
+
+---
 
 ## Topics Covered
 
-### 1. Missing Values
+### 1. Data Cleaning
 
-- Mean imputation
-- Median imputation
-- Most frequent imputation
-- Constant-value imputation
-- SimpleImputer
-- Train/Test data handling
-- Avoiding data leakage
+- Missing Values
+- Duplicate Values
+- Outlier Detection
+  - IQR Method
+  - Z-Score Method
 
-### 2. Feature Scaling
+### 2. Encoding
+
+- Label Encoding
+- One-Hot Encoding
+- Ordinal Encoding
+
+### 3. Feature Scaling
 
 - StandardScaler
 - MinMaxScaler
 - RobustScaler
-- MaxAbsScaler
 
-### 3. Categorical Encoding
+### 4. Feature Engineering
 
-- OrdinalEncoder
-- OneHotEncoder
+- Creating Features
+- Feature Transformation
 
-### 4. Preprocessing Pipelines
-
-- Pipeline
-- make_pipeline
-- Combining preprocessing with Machine Learning models
-
-### 5. Feature Engineering
-
-- Creating useful features
-- PolynomialFeatures
-- Feature transformations
-
-### 6. Feature Selection
-
-- Basic feature selection techniques
-- Selecting relevant features for Machine Learning
+---
 
 ## Repository Structure
 
 ```text
-machine-learning-data-preprocessing/
+preprocessing/
 │
-├── 01_missing_values/
-│   ├── simple_imputer_practice.py
-│   └── simpleimputer_practice.csv
+├── 01_missing_values.py
+├── 02_duplicate_values.py
+├── 03_outlier_detection.py
 │
-├── 02_feature_scaling/
-│   ├── standard_scaler.py
-│   ├── minmax_scaler.py
-│   └── robust_scaler.py
+├── 04_label_encoding.py
+├── 05_one_hot_encoding.py
+├── 06_ordinal_encoding.py
 │
-├── 03_categorical_encoding/
-│   ├── ordinal_encoder.py
-│   └── onehot_encoder.py
+├── 07_standard_scaler.py
+├── 08_minmax_scaler.py
+├── 09_robust_scaler.py
 │
-├── 04_pipelines/
-│   └── preprocessing_pipeline.py
+├── 10_creating_features.py
+├── 11_feature_transformation.py
 │
-├── 05_feature_engineering/
-│   └── polynomial_features.py
-│
-├── 06_feature_selection/
-│   └── feature_selection.py
-│
-├── README.md
-└── requirements.txt
+├── simpleimputer_practice.csv
+├── requirements.txt
+└── README.md
