@@ -1,0 +1,13 @@
+age,salary,gender,city,experience,purchased
+22.0,30000.0,Male,Lahore,1.0,No
+25.0,35000.0,Female,Lahore,2.0,No
+,40000.0,Male,,3.0,Yes
+31.0,,,Islamabad,,Yes
+35.0,45000.0,Female,Karachi,5.0,Yes
+,500000.0,Male,Lahore,8.0,Yes
+42.0,,,Karachi,10.0,No
+48.0,65000.0,Female,,,Yes
+29.0,38000.0,Male,Islamabad,4.0,No
+55.0,70000.0,Male,Lahore,12.0,Yes
+27.0,42000.0,Female,Karachi,,No
+39.0,,,Lahore,7.0,Yes
